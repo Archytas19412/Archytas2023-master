@@ -10,5 +10,4 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 public class AutonOp {
     Servo claw;
     DcMotor RightBack;
-    DcMotor
 }

@@ -23,6 +23,10 @@ public class ArchytasTeleOp extends OpMode {
        LeftFront = hardwareMap.dcMotor.get("LeftFront");
        LeftBack = hardwareMap.dcMotor.get("LeftBack");
        Claw = hardwareMap.servo.get("Claw");
+
+       RightFront.setDirection(REVERSE);
+       RightBack
+
     }
 
     //Be constantly in loop once press play

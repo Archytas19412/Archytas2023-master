@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 
 @Autonomous(name = "autonMode")
 
-public class AutonOp extends LinearOpMode {
+public abstract class AutonOp extends LinearOpMode {
     Servo Claw;
     DcMotor RightFront;
     DcMotor RightBack;

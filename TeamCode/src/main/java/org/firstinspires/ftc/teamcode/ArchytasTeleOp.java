@@ -24,8 +24,8 @@ public class ArchytasTeleOp extends OpMode {
        LeftBack = hardwareMap.dcMotor.get("LeftBack");
        Claw = hardwareMap.servo.get("Claw");
 
-       RightFront.setDirection(REVERSE);
-       RightBack
+       RightFront.setDirection(DcMotor.Direction.REVERSE);
+       RightBack.setDirection(DcMotor.Direction.REVERSE);
 
     }
 

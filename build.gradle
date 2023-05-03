@@ -30,6 +30,3 @@ repositories {
         dirs '../libs'
     }
 }
-dependencies {
-    implementation 'org.openftc:easyopencv:1.6.2'
-}

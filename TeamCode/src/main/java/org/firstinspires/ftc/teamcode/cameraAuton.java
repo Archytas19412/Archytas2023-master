@@ -40,11 +40,14 @@ import java.util.ArrayList;
 public class cameraAuton extends LinearOpMode
 {
     OpenCvCamera camera;
+    DcMotor frontRightMotor;
+    DcMotor backRightMotor;
+    DcMotor frontLeftMotor;
+    DcMotor backLeftMotor;
 
 
     //Put motor and servo declarations here
-    DcMotor exampleMotor;
-    Servo exampleServo;
+
 
 
     AprilTagDetectionPipeline aprilTagDetectionPipeline;
@@ -80,8 +83,10 @@ public class cameraAuton extends LinearOpMode
         camera = OpenCvCameraFactory.getInstance().createWebcam(hardwareMap.get(WebcamName.class, "Webcam 1"), cameraMonitorViewId);
         aprilTagDetectionPipeline = new AprilTagDetectionPipeline(tagsize, fx, fy, cx, cy);
         // Put hardware mappings here as well as reversed motors
-        exampleMotor = hardwareMap.dcMotor.get("exampleMotor");
-        exampleServo = hardwareMap.servo.get("exampleServo");
+        frontRightMotor = hardwareMap.dcMotor.get("frontRightMotor");
+        backRightMotor = hardwareMap.dcMotor.get("backRightMotor");
+        frontLeftMotor = hardwareMap.dcMotor.get("frontLeftMotor");
+        backLeftMotor = hardwareMap.dcMotor.get("backLeftMotor");
 
         camera.setPipeline(aprilTagDetectionPipeline);
         camera.openCameraDeviceAsync(new OpenCvCamera.AsyncCameraOpenListener()
@@ -183,21 +188,108 @@ public class cameraAuton extends LinearOpMode
             telemetry.update();
         }
 
+        backRightMotor.setDirection(DcMotor.Direction.REVERSE);
+        frontRightMotor.setDirection(DcMotor.Direction.REVERSE);
 
         // THIS IS THE MOST IMPORTANT PART OF THE CODE.
         /* Actually do something useful */
         // If no tag is found or tag number 1 was found do what is inside the if statement
         if(tagOfInterest == null || tagOfInterest.id == locationOne)
         {
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(0.5);
+            backLeftMotor.setPower(0.5);
+            backRightMotor.setPower(-0.5);
+            sleep(1200);
+            frontLeftMotor.setPower(0);
+            frontRightMotor.setPower(0);
+            backLeftMotor.setPower(0);
+            backRightMotor.setPower(0);
+            sleep(2500);
+            // forward now
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(-0.5);
+            backLeftMotor.setPower(-0.5);
+            backRightMotor.setPower(-0.5);
+            sleep(800);
+            frontLeftMotor.setPower(0);
+            frontRightMotor.setPower(0);
+            backLeftMotor.setPower(0);
+            backRightMotor.setPower(0);
+            sleep(0);
 
         }
         // If the tag number 2 was found, do whatever is inside this else if statement
         else if (tagOfInterest.id == locationTwo)
         {
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(0.5);
+            backLeftMotor.setPower(0.5);
+            backRightMotor.setPower(-0.5);
+            sleep(1200);
+            frontLeftMotor.setPower(0);
+            frontRightMotor.setPower(0);
+            backLeftMotor.setPower(0);
+            backRightMotor.setPower(0);
+            sleep(1500);
+            // forward now
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(-0.5);
+            backLeftMotor.setPower(-0.5);
+            backRightMotor.setPower(-0.5);
+            sleep(800);
+            frontLeftMotor.setPower(0);
+            frontRightMotor.setPower(0);
+            backLeftMotor.setPower(0);
+            backRightMotor.setPower(0);
+            sleep(0);
+            //right side now
+            frontLeftMotor.setPower(0.5);
+            frontRightMotor.setPower(-0.5);
+            backLeftMotor.setPower(-0.5);
+            backRightMotor.setPower(0.5);
+            sleep(1200);
+            frontLeftMotor.setPower(0);
+            frontRightMotor.setPower(0);
+            backLeftMotor.setPower(0);
+            backRightMotor.setPower(0);
+            sleep(2500);
 
         }
         // If the tag number 3 was found, do whatever is inside this else if statement
         else if (tagOfInterest.id == locationThree){
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(0.5);
+            backLeftMotor.setPower(0.5);
+            backRightMotor.setPower(-0.5);
+            sleep(1200);
+            frontLeftMotor.setPower(0);
+            frontRightMotor.setPower(0);
+            backLeftMotor.setPower(0);
+            backRightMotor.setPower(0);
+            sleep(1500);
+            // forward now
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(-0.5);
+            backLeftMotor.setPower(-0.5);
+            backRightMotor.setPower(-0.5);
+            sleep(800);
+            frontLeftMotor.setPower(0);
+            frontRightMotor.setPower(0);
+            backLeftMotor.setPower(0);
+            backRightMotor.setPower(0);
+            sleep(0);
+            //right side now
+            frontLeftMotor.setPower(0.5);
+            frontRightMotor.setPower(-0.5);
+            backLeftMotor.setPower(-0.5);
+            backRightMotor.setPower(0.5);
+            sleep(2350);
+            frontLeftMotor.setPower(0);
+            frontRightMotor.setPower(0);
+            backLeftMotor.setPower(0);
+            backRightMotor.setPower(0);
+            sleep(2500);
 
         }
 

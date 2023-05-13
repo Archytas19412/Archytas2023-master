@@ -245,7 +245,7 @@ public class redLeftAuton extends LinearOpMode
             frontRightMotor.setPower(0.5);
             backLeftMotor.setPower(0.5);
             backRightMotor.setPower(-0.5);
-            sleep(1200);
+            sleep(1330);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);
@@ -275,15 +275,13 @@ public class redLeftAuton extends LinearOpMode
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);
             backRightMotor.setPower(0);
-            sleep(0);
+            sleep(1250);
             //right side now
-            frontLeftMotor.setPower(0.5);
-            frontRightMotor.setPower(-0.5);
-            backLeftMotor.setPower(-0.5);
-            backRightMotor.setPower(0.5);
-
-            // REDUCE THIS NUMBER TO CHANGE DURATION
-            sleep(2000);
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(0.5);
+            backLeftMotor.setPower(0.5);
+            backRightMotor.setPower(-0.5);
+            sleep(1350);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);

@@ -191,7 +191,7 @@ public class autonTest extends LinearOpMode
         // THIS IS THE MOST IMPORTANT PART OF THE CODE.
         /* Actually do something useful */
         // If no tag is found or tag number 1 was found do what is inside the if statement
-        if(tagOfInterest == null || tagOfInterest.id == locationOne)
+        if(tagOfInterest == null || tagOfInterest.id == locationThree)
         {
             frontLeftMotor.setPower(0.5);
             frontRightMotor.setPower(-0.5);
@@ -254,7 +254,7 @@ public class autonTest extends LinearOpMode
 
         }
         // If the tag number 3 was found, do whatever is inside this else if statement
-        else if (tagOfInterest.id == locationThree){
+        else if (tagOfInterest.id == locationOne){
             frontLeftMotor.setPower(0.5);
             frontRightMotor.setPower(-0.5);
             backLeftMotor.setPower(-0.5);
@@ -283,7 +283,7 @@ public class autonTest extends LinearOpMode
             backRightMotor.setPower(0.5);
 
             // REDUCE THIS NUMBER TO CHANGE DURATION
-            sleep(1000);
+            sleep(500);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);

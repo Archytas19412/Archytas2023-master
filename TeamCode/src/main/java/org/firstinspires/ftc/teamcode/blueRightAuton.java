@@ -193,7 +193,6 @@ public class blueRightAuton extends LinearOpMode
         // If no tag is found or tag number 1 was found do what is inside the if statement
         if(tagOfInterest == null || tagOfInterest.id == locationOne)
         {
-            //left
             frontLeftMotor.setPower(-0.5);
             frontRightMotor.setPower(0.5);
             backLeftMotor.setPower(0.5);
@@ -220,7 +219,6 @@ public class blueRightAuton extends LinearOpMode
         // If the tag number 2 was found, do whatever is inside this else if statement
         else if (tagOfInterest.id == locationTwo)
         {
-            //right
             frontLeftMotor.setPower(-0.5);
             frontRightMotor.setPower(0.5);
             backLeftMotor.setPower(0.5);
@@ -247,17 +245,17 @@ public class blueRightAuton extends LinearOpMode
             frontRightMotor.setPower(-0.5);
             backLeftMotor.setPower(-0.5);
             backRightMotor.setPower(0.5);
-            sleep(1200);
+            sleep(1330);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);
             backRightMotor.setPower(0);
             sleep(2500);
 
+
         }
         // If the tag number 3 was found, do whatever is inside this else if statement
         else if (tagOfInterest.id == locationThree){
-            //right now
             frontLeftMotor.setPower(-0.5);
             frontRightMotor.setPower(0.5);
             backLeftMotor.setPower(0.5);
@@ -278,13 +276,13 @@ public class blueRightAuton extends LinearOpMode
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);
             backRightMotor.setPower(0);
-            sleep(0);
+            sleep(1250);
             //right side now
             frontLeftMotor.setPower(0.5);
             frontRightMotor.setPower(-0.5);
             backLeftMotor.setPower(-0.5);
             backRightMotor.setPower(0.5);
-            sleep(2350);
+            sleep(1350);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);

@@ -283,7 +283,7 @@ public class autonTest extends LinearOpMode
             backRightMotor.setPower(0.5);
 
             // REDUCE THIS NUMBER TO CHANGE DURATION
-            sleep(2000);
+            sleep(1000);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);

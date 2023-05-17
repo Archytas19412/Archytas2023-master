@@ -234,18 +234,18 @@ public class blueRightAuton extends LinearOpMode
             frontRightMotor.setPower(-0.5);
             backLeftMotor.setPower(-0.5);
             backRightMotor.setPower(-0.5);
-            sleep(750);
+            sleep(747);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);
             backRightMotor.setPower(0);
             sleep(0);
-            //right side now
+            //left side now
             frontLeftMotor.setPower(0.5);
             frontRightMotor.setPower(-0.5);
             backLeftMotor.setPower(-0.5);
             backRightMotor.setPower(0.5);
-            sleep(1330);
+            sleep(1230);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);

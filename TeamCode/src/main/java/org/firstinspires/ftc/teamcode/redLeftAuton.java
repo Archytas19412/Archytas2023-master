@@ -66,9 +66,9 @@ public class redLeftAuton extends LinearOpMode
 
 
     // There are three locations, thus there need to be three different tags on the sleeve
-    int locationOne = 3;
+    int locationOne = 1;
     int locationTwo = 2;
-    int locationThree = 1;
+    int locationThree = 3;
 
     AprilTagDetection tagOfInterest = null;
 
@@ -191,7 +191,7 @@ public class redLeftAuton extends LinearOpMode
         // THIS IS THE MOST IMPORTANT PART OF THE CODE.
         /* Actually do something useful */
         // If no tag is found or tag number 1 was found do what is inside the if statement
-        if(tagOfInterest == null || tagOfInterest.id == locationThree)
+        if(tagOfInterest == null || tagOfInterest.id == locationOne)
         {
             frontLeftMotor.setPower(0.5);
             frontRightMotor.setPower(-0.5);
@@ -254,7 +254,7 @@ public class redLeftAuton extends LinearOpMode
 
         }
         // If the tag number 3 was found, do whatever is inside this else if statement
-        else if (tagOfInterest.id == locationOne){
+        else if (tagOfInterest.id == locationThree){
             frontLeftMotor.setPower(0.5);
             frontRightMotor.setPower(-0.5);
             backLeftMotor.setPower(-0.5);

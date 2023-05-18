@@ -33,7 +33,7 @@ import org.openftc.easyopencv.OpenCvCameraRotation;
 
 import java.util.ArrayList;
 
-@Autonomous
+@Autonomous (name = "blueRightAuton")
 public class blueRightAuton extends LinearOpMode
 {
     OpenCvCamera camera;

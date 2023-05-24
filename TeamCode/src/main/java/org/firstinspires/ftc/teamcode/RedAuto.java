@@ -282,7 +282,7 @@ public class RedAuto extends LinearOpMode
             frontRightMotor.setPower(0.5);
             backLeftMotor.setPower(0.5);
             backRightMotor.setPower(-0.5);
-            sleep(2100);
+            sleep(2500);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);

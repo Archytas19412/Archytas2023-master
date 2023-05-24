@@ -21,8 +21,8 @@
 
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
@@ -34,7 +34,7 @@ import org.openftc.easyopencv.OpenCvCameraRotation;
 import java.util.ArrayList;
 
 @Autonomous
-public class blueRightAuton extends LinearOpMode
+public class RedAuto extends LinearOpMode
 {
     OpenCvCamera camera;
     DcMotor frontRightMotor;
@@ -193,10 +193,10 @@ public class blueRightAuton extends LinearOpMode
         // If no tag is found or tag number 1 was found do what is inside the if statement
         if(tagOfInterest == null || tagOfInterest.id == locationOne)
         {
-            frontLeftMotor.setPower(-0.5);
-            frontRightMotor.setPower(0.5);
-            backLeftMotor.setPower(0.5);
-            backRightMotor.setPower(-0.5);
+            frontLeftMotor.setPower(0.5);
+            frontRightMotor.setPower(-0.5);
+            backLeftMotor.setPower(-0.5);
+            backRightMotor.setPower(0.5);
             sleep(1200);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
@@ -219,10 +219,10 @@ public class blueRightAuton extends LinearOpMode
         // If the tag number 2 was found, do whatever is inside this else if statement
         else if (tagOfInterest.id == locationTwo)
         {
-            frontLeftMotor.setPower(-0.5);
-            frontRightMotor.setPower(0.5);
-            backLeftMotor.setPower(0.5);
-            backRightMotor.setPower(-0.5);
+            frontLeftMotor.setPower(0.5);
+            frontRightMotor.setPower(-0.5);
+            backLeftMotor.setPower(-0.5);
+            backRightMotor.setPower(0.5);
             sleep(1200);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
@@ -241,10 +241,10 @@ public class blueRightAuton extends LinearOpMode
             backRightMotor.setPower(0);
             sleep(0);
             //left side now
-            frontLeftMotor.setPower(0.5);
-            frontRightMotor.setPower(-0.5);
-            backLeftMotor.setPower(-0.5);
-            backRightMotor.setPower(0.5);
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(0.5);
+            backLeftMotor.setPower(0.5);
+            backRightMotor.setPower(-0.5);
             sleep(1230);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
@@ -256,10 +256,10 @@ public class blueRightAuton extends LinearOpMode
         }
         // If the tag number 3 was found, do whatever is inside this else if statement
         else if (tagOfInterest.id == locationThree){
-            frontLeftMotor.setPower(-0.5);
-            frontRightMotor.setPower(0.5);
-            backLeftMotor.setPower(0.5);
-            backRightMotor.setPower(-0.5);
+            frontLeftMotor.setPower(0.5);
+            frontRightMotor.setPower(-0.5);
+            backLeftMotor.setPower(-0.5);
+            backRightMotor.setPower(0.5);
             sleep(1200);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
@@ -271,18 +271,18 @@ public class blueRightAuton extends LinearOpMode
             frontRightMotor.setPower(-0.5);
             backLeftMotor.setPower(-0.5);
             backRightMotor.setPower(-0.5);
-            sleep(800);
+            sleep(750);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);
             backRightMotor.setPower(0);
             sleep(1250);
             //right side now
-            frontLeftMotor.setPower(0.5);
-            frontRightMotor.setPower(-0.5);
-            backLeftMotor.setPower(-0.5);
-            backRightMotor.setPower(0.5);
-            sleep(1600);
+            frontLeftMotor.setPower(-0.5);
+            frontRightMotor.setPower(0.5);
+            backLeftMotor.setPower(0.5);
+            backRightMotor.setPower(-0.5);
+            sleep(2100);
             frontLeftMotor.setPower(0);
             frontRightMotor.setPower(0);
             backLeftMotor.setPower(0);
